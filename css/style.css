@@ -3375,6 +3375,12 @@ button[type=submit] span {
 }
 
 @media (min-width: 74.99875em) {
+  .hero__body {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
   .hero__content::after {
     content: "";
     position: absolute;
@@ -3591,9 +3597,6 @@ button[type=submit] span {
 @media (max-width: 74.99875em) {
   .hero__body {
     position: relative;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 
   .hero__mob-stars {
