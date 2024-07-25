@@ -3308,7 +3308,6 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 80,
-            autoHeight: true,
             speed: 1200,
             autoplay: {
                 delay: 15e3
@@ -3530,20 +3529,17 @@
         duration: 300
     }, {
         class: "animation-step-04",
-        duration: 2e3
+        duration: 1e3
     } ];
     const secondSteps = [ {
         class: "animation-step-01",
-        duration: 2e3
+        duration: 1e3
     }, {
         class: "animation-step-02",
-        duration: 1300
+        duration: 700
     }, {
         class: "animation-step-03",
-        duration: 300
-    }, {
-        class: "animation-step-04",
-        duration: 2e3
+        duration: 1e3
     } ];
     let animationState = {
         firstContainer: {
