@@ -3684,6 +3684,10 @@
                 type: "bullets",
                 el: ".what-mean__bullets",
                 clickable: true
+            },
+            loop: true,
+            autoplay: {
+                delay: 15e3
             }
         });
     }
