@@ -3680,6 +3680,7 @@
             slidesPerView: 1,
             spaceBetween: 50,
             speed: 1200,
+            autoHeight: true,
             pagination: {
                 type: "bullets",
                 el: ".what-mean__bullets",
