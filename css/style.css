@@ -1713,9 +1713,6 @@ button[type=submit] span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   line-height: 133%;
 }
 
@@ -1790,9 +1787,6 @@ button[type=submit] span {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   height: 100%;
   line-height: 133%;
 }
@@ -2100,6 +2094,11 @@ button[type=submit] span {
   max-width: 488px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.show-btn .why-us__button:not(.why-us__button--fixed) {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @-webkit-keyframes crmRotateAnimation {
@@ -3964,6 +3963,9 @@ button[type=submit] span {
 
   .slide-text-col {
     gap: 16px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .col-slide-1 {
@@ -4092,6 +4094,9 @@ button[type=submit] span {
 
   .what-mean__slide--02 .slide-what-mean__col {
     gap: 24px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .why-us__columns {
@@ -4752,7 +4757,7 @@ button[type=submit] span {
   }
 
   .what-mean__slide--02 .slide-what-mean__col:nth-of-type(2)::after {
-    right: 29%;
+    right: 38%;
     bottom: -10px;
     -webkit-transform: translate(50%, 50%) rotate(90deg);
         -ms-transform: translate(50%, 50%) rotate(90deg);
@@ -4766,7 +4771,7 @@ button[type=submit] span {
   }
 
   .what-mean__slide--02 .slide-what-mean__col:nth-of-type(3)::after {
-    bottom: 40px;
+    bottom: 55px;
     -webkit-transform: translate(-100%, 50%);
         -ms-transform: translate(-100%, 50%);
             transform: translate(-100%, 50%);
@@ -4869,11 +4874,7 @@ button[type=submit] span {
   }
 
   .what-mean__slide {
-    gap: 16px;
-  }
-
-  .what-mean__slide--02 .slide-what-mean__col {
-    gap: 16px;
+    gap: 12px;
   }
 
   .why-us__columns {
@@ -6410,27 +6411,31 @@ button[type=submit] span {
   }
 
   .what-mean__slide--01 .col-slide-2::after {
-    height: 43px;
-    bottom: -8px;
+    height: 32px;
+    bottom: -6px;
+  }
+
+  .what-mean__slide--02 .slide-what-mean__col {
+    gap: 8px;
   }
 
   .what-mean__slide--02 .slide-what-mean__col:nth-of-type(2)::after {
-    height: 43px;
-    bottom: -8px;
+    height: 32px;
+    bottom: -6px;
   }
 
   .what-mean__slide--02 .slide-what-mean__col:nth-of-type(3)::after {
-    height: 43px;
+    height: 33px;
     left: 2px;
   }
 
   .what-mean__slide--03 .col-slide-2::after {
-    height: 43px;
+    height: 33px;
     right: 2px;
   }
 
   .what-mean__slide--04 .col-slide-2::after {
-    height: 43px;
+    height: 33px;
     right: 2px;
   }
 
@@ -6444,6 +6449,22 @@ button[type=submit] span {
 
   .why-us__element--5 .why-us__text {
     max-width: 76.3888888889%;
+  }
+
+  .why-us__animation {
+    position: relative;
+  }
+
+  .why-us__animation img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 
   .why-us__fixed-button {
@@ -7004,6 +7025,10 @@ button[type=submit] span {
 
   .what-mean__slide--01 .col-slide-2::after {
     bottom: -9px;
+  }
+
+  .what-mean__slide--02 .slide-what-mean__col {
+    gap: 16px;
   }
 
   .what-mean__slide--02 .slide-what-mean__col:nth-of-type(2)::after {
