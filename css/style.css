@@ -2014,7 +2014,6 @@ button[type=submit] span {
 
 .why-us__element--9 {
   position: relative;
-  padding: 0;
   display: block;
   background-color: var(--orange-light);
 }
@@ -4202,6 +4201,10 @@ button[type=submit] span {
     grid-row: 2 span;
   }
 
+  .why-us__element--9 {
+    padding: 0;
+  }
+
   .why-us__element--9::after {
     left: 100px;
     top: 21px;
@@ -4990,6 +4993,7 @@ button[type=submit] span {
   }
 
   .why-us__element--9 {
+    padding: 0;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -5048,7 +5052,7 @@ button[type=submit] span {
   }
 
   .header__content {
-    padding: 12px;
+    padding: 12px 0;
   }
 
   .header__logo {
@@ -6437,6 +6441,23 @@ button[type=submit] span {
   .what-mean__slide--04 .col-slide-2::after {
     height: 33px;
     right: 2px;
+  }
+
+  .col-slide-1__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .col-slide-1__image img {
+    width: 80px;
+    height: 80px;
   }
 
   .why-us__element {
