@@ -2203,7 +2203,6 @@ button[type=submit] span {
   position: absolute;
   top: 0;
   right: 0;
-  width: 24px;
   height: auto;
   aspect-ratio: 1;
   -webkit-transform: translate(0, -100%) rotate(180deg);
@@ -2213,10 +2212,12 @@ button[type=submit] span {
 
 .confucius-hero__label--bottom::before {
   background-color: var(--black);
+  width: 24px;
 }
 
 .confucius-hero__label--bottom::after {
   border-radius: var(--border-radius) 0 0 0;
+  width: 36px;
 }
 
 .confucius-hero__label--bottom i {
@@ -2230,7 +2231,6 @@ button[type=submit] span {
   content: "";
   position: absolute;
   left: 0;
-  width: 24px;
   height: auto;
   aspect-ratio: 1;
   -webkit-transform: translate(-100%, 0) rotate(180deg);
@@ -2240,10 +2240,12 @@ button[type=submit] span {
 
 .confucius-hero__label--bottom i::before {
   background-color: var(--black);
+  width: 24px;
 }
 
 .confucius-hero__label--bottom i::after {
   background-color: var(--black-light);
+  width: 36px;
   border-radius: var(--border-radius) 0 0 0;
 }
 
@@ -2257,18 +2259,19 @@ button[type=submit] span {
   position: absolute;
   top: 0;
   left: 0;
-  width: 24px;
   height: auto;
   aspect-ratio: 1;
 }
 
 .confucius-hero__descr::before {
   background-color: var(--black);
+  width: 24px;
 }
 
 .confucius-hero__descr::after {
   background-color: var(--black-light);
   border-radius: var(--border-radius) 0 0 0;
+  width: 36px;
 }
 
 .confucius-hero__image {
