@@ -5,6 +5,7 @@
   --blue: #1c7ef1;
   --blue-light: #b6d7ff;
   --white: #fff;
+  --white-dark: #f1f5f9;
   --red: #ff3333;
   --orange: #ef755a;
   --orange-light: #ffb8a8;
@@ -592,7 +593,7 @@ button[type=submit] span {
 
 .benefit-hero {
   position: relative;
-  background-color: #f1f5f9;
+  background-color: var(--white-dark);
   border-radius: var(--border-radius);
   color: var(--black);
 }
@@ -1233,7 +1234,7 @@ button[type=submit] span {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  background-color: #f1f5f9;
+  background-color: var(--white-dark);
   border-radius: var(--border-radius);
   text-align: center;
 }
@@ -1269,7 +1270,7 @@ button[type=submit] span {
       -ms-flex-align: start;
           align-items: start;
   border-radius: var(--border-radius);
-  background-color: #f1f5f9;
+  background-color: var(--white-dark);
 }
 
 .item-about:last-child {
@@ -2009,7 +2010,7 @@ button[type=submit] span {
           align-items: start;
   -ms-flex-line-pack: start;
       align-content: start;
-  background-color: #f1f5f9;
+  background-color: var(--white-dark);
 }
 
 .why-us__element--9 {
@@ -2036,7 +2037,7 @@ button[type=submit] span {
           align-items: start;
   -ms-flex-line-pack: start;
       align-content: start;
-  background-color: #f1f5f9;
+  background-color: var(--white-dark);
 }
 
 .why-us__element--10::after {
@@ -2141,6 +2142,616 @@ button[type=submit] span {
   100% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+}
+
+.wrapper--confusion .confucius-hero__container {
+  max-width: 1400px;
+}
+
+.confucius-hero__left {
+  background-color: var(--black-light);
+  border-radius: var(--border-radius);
+}
+
+.confucius-hero__label {
+  position: relative;
+  z-index: 5;
+  background-color: var(--black);
+}
+
+.confucius-hero__label span {
+  color: var(--secondary-color);
+}
+
+.confucius-hero__label--top {
+  border-radius: 0 0 var(--border-radius) 0;
+  position: relative;
+}
+
+.confucius-hero__label--top::before,
+.confucius-hero__label--top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: auto;
+  aspect-ratio: 1;
+  -webkit-transform: translate(100%, 0%);
+      -ms-transform: translate(100%, 0%);
+          transform: translate(100%, 0%);
+}
+
+.confucius-hero__label--top::before {
+  background-color: var(--black);
+}
+
+.confucius-hero__label--top::after {
+  background-color: var(--black-light);
+  border-radius: var(--border-radius) 0 0 0;
+}
+
+.confucius-hero__label--bottom {
+  border-radius: var(--border-radius) 0 0 0;
+  position: relative;
+}
+
+.confucius-hero__label--bottom::before,
+.confucius-hero__label--bottom::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: auto;
+  aspect-ratio: 1;
+  -webkit-transform: translate(0, -100%) rotate(180deg);
+      -ms-transform: translate(0, -100%) rotate(180deg);
+          transform: translate(0, -100%) rotate(180deg);
+}
+
+.confucius-hero__label--bottom::before {
+  background-color: var(--black);
+}
+
+.confucius-hero__label--bottom::after {
+  border-radius: var(--border-radius) 0 0 0;
+}
+
+.confucius-hero__label--bottom i {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.confucius-hero__label--bottom i::before,
+.confucius-hero__label--bottom i::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: auto;
+  aspect-ratio: 1;
+  -webkit-transform: translate(-100%, 0) rotate(180deg);
+      -ms-transform: translate(-100%, 0) rotate(180deg);
+          transform: translate(-100%, 0) rotate(180deg);
+}
+
+.confucius-hero__label--bottom i::before {
+  background-color: var(--black);
+}
+
+.confucius-hero__label--bottom i::after {
+  background-color: var(--black-light);
+  border-radius: var(--border-radius) 0 0 0;
+}
+
+.confucius-hero__descr {
+  position: relative;
+}
+
+.confucius-hero__descr::before,
+.confucius-hero__descr::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: auto;
+  aspect-ratio: 1;
+}
+
+.confucius-hero__descr::before {
+  background-color: var(--black);
+}
+
+.confucius-hero__descr::after {
+  background-color: var(--black-light);
+  border-radius: var(--border-radius) 0 0 0;
+}
+
+.confucius-hero__image {
+  position: relative;
+}
+
+.confucius-hero__body-image {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.confucius-hero__finger {
+  position: absolute;
+  top: 5.5%;
+  left: 23.5%;
+  width: 5.2950075643%;
+  height: auto;
+  aspect-ratio: 35/105;
+  -webkit-animation: fingerWave 1s infinite alternate;
+          animation: fingerWave 1s infinite alternate;
+  -webkit-transform-origin: center bottom;
+      -ms-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+.confucius-hero__stars {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+}
+
+.confucius-hero__stars--01 {
+  top: 8.1%;
+  left: -4.7%;
+  width: 104.2360060514%;
+  aspect-ratio: 689/413;
+}
+
+.confucius-hero__stars--02 {
+  top: 3.3%;
+  left: 13.4%;
+  width: 57.9425113464%;
+  aspect-ratio: 383/429;
+}
+
+.confucius-hero__stars--03 {
+  top: 25.5%;
+  left: 7.7%;
+  width: 84.4175491679%;
+  aspect-ratio: 558/133;
+}
+
+.descr-confucius__item {
+  position: relative;
+  z-index: 6;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: var(--black);
+  background-color: var(--white-dark);
+  border-radius: var(--border-radius);
+}
+
+.descr-confucius__item--01::after {
+  content: "";
+  position: absolute;
+}
+
+.descr-confucius__item--02::after {
+  content: "";
+  position: absolute;
+}
+
+.descr-confucius__item--03::after {
+  content: "";
+  position: absolute;
+}
+
+.descr-confucius__item--04::after {
+  content: "";
+  position: absolute;
+}
+
+.descr-confucius__item--05::after {
+  content: "";
+  position: absolute;
+}
+
+.last-thing__title {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.last-thing__body {
+  display: -ms-grid;
+  display: grid;
+  color: var(--black);
+}
+
+.last-thing__item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  background-color: var(--white-dark);
+}
+
+.last-thing__image {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.last-thing__image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.last-thing__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.last-thing__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.last-thing__item--rose {
+  background-color: #ffb9d3;
+}
+
+.last-thing__item--yellow {
+  background-color: #d7e13e;
+}
+
+.item-last-thing {
+  border-radius: var(--border-radius);
+}
+
+.item-last-thing__label {
+  font-weight: 600;
+  line-height: 125%;
+}
+
+.item-last-thing__text {
+  line-height: 136%;
+}
+
+.item-last-thing__text b {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.moove-traffic__title {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.moove-traffic__body {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.moove-traffic__main-image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+._watcher-view .moove-traffic__image {
+  -webkit-animation: imageShake 1s infinite alternate;
+          animation: imageShake 1s infinite alternate;
+}
+
+.moove-traffic__image img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.moove-traffic__info {
+  display: -ms-grid;
+  display: grid;
+}
+
+.moove-traffic__mini-text {
+  text-align: center;
+}
+
+.classic-methods__top {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.classic-methods__descr {
+  line-height: 143%;
+}
+
+.classic-methods__items {
+  display: -ms-grid;
+  display: grid;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.classic-methods__item {
+  position: relative;
+  line-height: 135%;
+  border-radius: var(--border-radius);
+}
+
+.classic-methods__item--dark {
+  background-color: var(--black-light);
+}
+
+.classic-methods__item--white {
+  background-color: var(--white-dark);
+  color: var(--black);
+}
+
+.classic-methods__item--yellow {
+  background-color: #d7e13e;
+  color: var(--black);
+}
+
+.classic-methods__item:first-child {
+  /*
+  @media (min-width: $md2) {
+      right: 3px;
+      top: 70px;
+      transform: translate(100%, -50%);
+      height: 64px;
+  }
+  @media (max-width: $md2) {
+      right: 64px;
+      bottom: -6px;
+      height: 43px;
+      transform: translate(50%, 50%) rotate(90deg);
+      transform-origin: center center;
+  }
+  */
+}
+
+.classic-methods__item:first-child::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical.svg") 0 0/contain no-repeat;
+}
+
+.classic-methods__item:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical.svg") 0 0/contain no-repeat;
+}
+
+.classic-methods__item:nth-child(4)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical-fog.svg") 0 0/contain no-repeat;
+}
+
+.classic-methods__item:nth-child(5)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical-fog.svg") 0 0/contain no-repeat;
+}
+
+.classic-methods__item:nth-child(7)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical-yellow.svg") 0 0/contain no-repeat;
+}
+
+.classic-methods__item:nth-child(8)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  aspect-ratio: 30/64;
+  width: auto;
+  background: url("../img/crm/separator-vertical-yellow.svg") 0 0/contain no-repeat;
+}
+
+.its-all__body {
+  position: relative;
+}
+
+.its-all__body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+.its-all__image {
+  position: relative;
+  z-index: 3;
+}
+
+.its-all__body-image {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.its-all__hand {
+  position: absolute;
+  z-index: 1;
+  top: 19%;
+  right: 16px;
+  width: 34.8571428571%;
+  height: auto;
+  aspect-ratio: 122/55;
+  -webkit-animation: handWaveConf 2s infinite;
+          animation: handWaveConf 2s infinite;
+  -webkit-transform-origin: left center;
+      -ms-transform-origin: left center;
+          transform-origin: left center;
+}
+
+.its-all__content {
+  position: relative;
+  z-index: 2;
+}
+
+.its-all__text span {
+  color: var(--secondary-color);
+}
+
+.its-all__bottom-text {
+  text-align: left;
+}
+
+.decor-line__body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d7e13e;
+  color: var(--black);
+}
+
+.decor-line__body span {
+  margin: 0 auto;
+  font-weight: 600;
+  text-align: center;
+  line-height: 143%;
+}
+
+.decor-line__body::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.decor-line__body::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+@-webkit-keyframes handWaveConf {
+  0% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+@keyframes handWaveConf {
+  0% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+@-webkit-keyframes fingerWave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
+@keyframes fingerWave {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+}
+
+@-webkit-keyframes imageShake {
+  0% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+
+@keyframes imageShake {
+  0% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
   }
 }
 
@@ -2604,6 +3215,37 @@ button[type=submit] span {
 
   .why-us__fixed-button {
     display: none;
+  }
+
+  .moove-traffic__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .moove-traffic__main-image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 966px;
+            flex: 0 1 966px;
+  }
+
+  .moove-traffic__content {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 456px;
+            flex: 0 1 456px;
+    margin-left: -7.5757575758%;
+  }
+
+  .moove-traffic__info {
+    gap: 16px;
+    max-width: 285px;
+  }
+
+  .decor-line__body span {
+    max-width: 45.8333333333%;
   }
 }
 
@@ -3689,6 +4331,53 @@ button[type=submit] span {
     margin-left: -19.7869101979%;
   }
 
+  .its-all__body {
+    padding-right: 24px;
+  }
+
+  .its-all__body::after {
+    height: calc(100% - 56px);
+    top: 0;
+    right: 0;
+    background-color: var(--black-light);
+    border-radius: var(--border-radius);
+  }
+
+  .its-all__body::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 35.5303030303%;
+    height: auto;
+    aspect-ratio: 469/364;
+    background: url("../img/confucius/last-thing-bg-small.svg") 0 0/cover no-repeat;
+  }
+
+  .its-all__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .its-all__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 350px;
+            flex: 0 0 350px;
+    margin-top: 30px;
+  }
+
+  .its-all__content {
+    padding-top: 64px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 708px;
+            flex: 0 1 708px;
+  }
+
   .page-404__circle svg {
     -webkit-transform: translate(-41%, -50%);
         -ms-transform: translate(-41%, -50%);
@@ -3987,11 +4676,100 @@ button[type=submit] span {
   .why-us__text--large {
     line-height: 125%;
   }
+
+  .confucius-hero__label {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
+  .confucius-hero__label--top {
+    padding: 40px;
+  }
+
+  .descr-confucius__item {
+    --border-radius: 16px;
+    padding: 16px 24px;
+    font-size: 22px;
+    line-height: 136%;
+  }
+
+  .last-thing__body {
+    gap: 24px;
+    --border-radius: 24px;
+  }
+
+  .last-thing__item-top {
+    padding: 0px 40px;
+    gap: 16px;
+  }
+
+  .last-thing__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 838px;
+            flex: 0 1 838px;
+    padding: 48px 0;
+    line-height: 125%;
+  }
+
+  .last-thing__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 391px;
+            flex: 0 1 391px;
+  }
+
+  .last-thing__row {
+    gap: 24px;
+  }
+
+  .item-last-thing {
+    padding: 32px 40px;
+    text-align: center;
+  }
+
+  .item-last-thing__label {
+    margin-bottom: 16px;
+  }
+
+  .item-last-thing__text {
+    max-width: 568px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .classic-methods__top {
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+
+  .classic-methods__item {
+    padding: 32px;
+  }
+
+  .classic-methods__item--large-text {
+    line-height: 125%;
+  }
+
+  .its-all__text {
+    line-height: 125%;
+  }
+
+  .decor-line__body {
+    padding: 50px 24px;
+  }
+
+  .decor-line__body span {
+    white-space: nowrap;
+  }
 }
 
 @media (min-width: 47.99875em) and (min-width: 89.5em) {
   .crm-hero__title {
     margin-bottom: 3.5rem;
+  }
+
+  .confucius-hero__label--top {
+    font-size: 4rem;
   }
 }
 
@@ -4240,6 +5018,359 @@ button[type=submit] span {
   .why-us__image {
     margin-bottom: -32px;
   }
+
+  .confucius-hero__body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    --border-radius: 24px;
+  }
+
+  .confucius-hero__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 765px;
+            flex: 0 0 765px;
+  }
+
+  .confucius-hero__label {
+    line-height: 96%;
+  }
+
+  .confucius-hero__label--bottom {
+    margin-top: -96px;
+    padding: 20px 37px 0;
+  }
+
+  .confucius-hero__label--bottom i::before,
+  .confucius-hero__label--bottom i::after {
+    bottom: 0;
+  }
+
+  .confucius-hero__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 980px;
+            flex: 0 1 980px;
+    margin-left: -22.5714285714%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .confucius-hero__image {
+    position: relative;
+    z-index: 5;
+    background-color: var(--black-light);
+    border-radius: var(--border-radius);
+    max-width: 72.5510204082%;
+    margin-left: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+
+  .descr-confucius {
+    gap: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .descr-confucius__item--01 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.3063328424%;
+            flex: 0 1 48.3063328424%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .descr-confucius__item--01::after {
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translate(100%, -50%);
+        -ms-transform: translate(100%, -50%);
+            transform: translate(100%, -50%);
+    width: 24px;
+    height: auto;
+    aspect-ratio: 24/38;
+    background: url("../img/confucius/conf-separator2.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--02 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.1590574374%;
+            flex: 0 1 48.1590574374%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .descr-confucius__item--02::after {
+    bottom: 7px;
+    right: 106px;
+    -webkit-transform: translate(50%, 100%) rotate(90deg);
+        -ms-transform: translate(50%, 100%) rotate(90deg);
+            transform: translate(50%, 100%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 30px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--03 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.1590574374%;
+            flex: 0 1 48.1590574374%;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .descr-confucius__item--03::after {
+    top: 50%;
+    left: 0px;
+    -webkit-transform: translate(-100%, -50%);
+        -ms-transform: translate(-100%, -50%);
+            transform: translate(-100%, -50%);
+    width: 24px;
+    height: auto;
+    aspect-ratio: 24/38;
+    background: url("../img/confucius/conf-separator2.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--04 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 6px;
+    margin-left: -9px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 48.4536082474%;
+            flex: 0 1 48.4536082474%;
+  }
+
+  .descr-confucius__item--04::after {
+    bottom: 7px;
+    right: 50%;
+    -webkit-transform: translate(50%, 100%) rotate(90deg);
+        -ms-transform: translate(50%, 100%) rotate(90deg);
+            transform: translate(50%, 100%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 30px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--05 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 74.5213549337%;
+            flex: 0 1 74.5213549337%;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+    margin-left: 11.3402061856%;
+  }
+
+  .descr-confucius__item--05::after {
+    bottom: 7px;
+    left: 137px;
+    -webkit-transform: translate(50%, 100%) rotate(90deg);
+        -ms-transform: translate(50%, 100%) rotate(90deg);
+            transform: translate(50%, 100%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 30px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--06 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 43.8880706922%;
+            flex: 0 1 43.8880706922%;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+    margin-left: 3.0927835052%;
+  }
+
+  .last-thing__text {
+    font-size: 32px;
+  }
+
+  .moove-traffic__content {
+    display: -ms-grid;
+    display: grid;
+    gap: 44px;
+  }
+
+  .moove-traffic__info {
+    margin-left: auto;
+  }
+
+  .classic-methods__items {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .classic-methods__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .classic-methods__item--large-text {
+    font-size: 32px;
+  }
+
+  .classic-methods__item:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .classic-methods__item:first-child::after {
+    -webkit-transform: translate(50%, 50%) rotate(90deg);
+        -ms-transform: translate(50%, 50%) rotate(90deg);
+            transform: translate(50%, 50%) rotate(90deg);
+    left: 64px;
+    bottom: -12px;
+    height: 64px;
+  }
+
+  .classic-methods__item:nth-child(2) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+
+  .classic-methods__item:nth-child(2)::after {
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: -12px;
+    top: 50%;
+    height: 64px;
+  }
+
+  .classic-methods__item:nth-child(3) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+
+  .classic-methods__item:nth-child(4) {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+  .classic-methods__item:nth-child(4)::after {
+    -webkit-transform: translate(-50%, 50%) rotate(90deg);
+        -ms-transform: translate(-50%, 50%) rotate(90deg);
+            transform: translate(-50%, 50%) rotate(90deg);
+    left: 50%;
+    bottom: -12px;
+    height: 64px;
+  }
+
+  .classic-methods__item:nth-child(5) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .classic-methods__item:nth-child(5)::after {
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: -12px;
+    top: 50%;
+    height: 64px;
+  }
+
+  .classic-methods__item:nth-child(6) {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+
+  .classic-methods__item:nth-child(7) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+
+  .classic-methods__item:nth-child(7)::after {
+    -webkit-transform: translate(50%, 50%) rotate(90deg);
+        -ms-transform: translate(50%, 50%) rotate(90deg);
+            transform: translate(50%, 50%) rotate(90deg);
+    left: 60px;
+    bottom: -12px;
+    height: 64px;
+  }
+
+  .classic-methods__item:nth-child(8) {
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
+  }
+
+  .classic-methods__item:nth-child(8)::after {
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: -12px;
+    top: 50%;
+    height: 64px;
+  }
+
+  .classic-methods__item:last-child {
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+
+  .its-all__text {
+    font-size: 32px;
+  }
 }
 
 @media (min-width: 61.99875em) and (min-width: 87.5em) {
@@ -4458,6 +5589,23 @@ button[type=submit] span {
     gap: 32px;
     max-width: 240px;
   }
+
+  .confucius-hero__body-image {
+    border-radius: 0 var(--border-radius) 0 0;
+  }
+
+  .descr-confucius {
+    padding: 34px 16px 48px 57px;
+  }
+
+  .moove-traffic__info {
+    margin-right: 29px;
+  }
+
+  .its-all__inner {
+    gap: 70px;
+    margin-left: 100px;
+  }
 }
 
 @media (min-width: 74.99875em) and (min-width: 87.5em) {
@@ -4473,6 +5621,30 @@ button[type=submit] span {
 @media (min-width: 81.25em) {
   .install-widget__message {
     top: 92px;
+  }
+
+  .decor-line__body::after {
+    width: auto;
+    aspect-ratio: 365/140;
+    background: url("../img/confucius/line-left.svg") 0 0/cover no-repeat;
+  }
+
+  .decor-line__body::before {
+    width: auto;
+    aspect-ratio: 376/140;
+    background: url("../img/confucius/line-right.svg") 0 0/cover no-repeat;
+  }
+}
+
+@media (min-width: 85.9375em) {
+  .confucius-hero__label--bottom::after {
+    background-color: #2a3641;
+  }
+}
+
+@media (min-width: 86.25em) {
+  .confucius-hero__label--bottom {
+    font-size: 4rem;
   }
 }
 
@@ -4552,6 +5724,50 @@ button[type=submit] span {
   }
 
   .why-us__text--large {
+    font-size: 2rem;
+  }
+
+  .page__confucius-hero {
+    margin-bottom: 10.0625rem;
+  }
+
+  .page__last-thing {
+    margin-bottom: 10.0625rem;
+  }
+
+  .page__moove-traffic {
+    margin-bottom: 10.0625rem;
+  }
+
+  .page__classic-methods {
+    margin-bottom: 8.75rem;
+  }
+
+  .page__its-all {
+    margin-bottom: 10.0625rem;
+  }
+
+  .page__decor-line {
+    margin-bottom: 10.0625rem;
+  }
+
+  .last-thing__title {
+    margin-bottom: 3.75rem;
+  }
+
+  .item-last-thing__label {
+    font-size: 2rem;
+  }
+
+  .moove-traffic__title {
+    margin-bottom: 5rem;
+  }
+
+  .its-all__text {
+    margin-bottom: 4rem;
+  }
+
+  .decor-line__body span {
     font-size: 2rem;
   }
 
@@ -4678,6 +5894,50 @@ button[type=submit] span {
     font-size: 0.875rem;
   }
 
+  .page__confucius-hero {
+    margin-bottom: 4.5rem;
+  }
+
+  .page__last-thing {
+    margin-bottom: 4.5rem;
+  }
+
+  .page__moove-traffic {
+    margin-bottom: 4.5rem;
+  }
+
+  .page__classic-methods {
+    margin-bottom: 4.5rem;
+  }
+
+  .page__its-all {
+    margin-bottom: 4.5rem;
+  }
+
+  .page__decor-line {
+    margin-bottom: 4.5rem;
+  }
+
+  .last-thing__title {
+    margin-bottom: 1.75rem;
+  }
+
+  .item-last-thing__label {
+    font-size: 0.875rem;
+  }
+
+  .moove-traffic__title {
+    margin-bottom: 1.125rem;
+  }
+
+  .its-all__text {
+    margin-bottom: 1.5rem;
+  }
+
+  .decor-line__body span {
+    font-size: 0.875rem;
+  }
+
   .page-404__digit {
     font-size: 5rem;
   }
@@ -4692,9 +5952,25 @@ button[type=submit] span {
   }
 }
 
+@media (max-width: 85.9375em) {
+  .confucius-hero__label--bottom::after {
+    background-color: var(--black-light);
+  }
+}
+
 @media (max-width: 81.25em) {
   .install-widget__message {
     top: 20px;
+  }
+
+  .decor-line__body::after {
+    width: 25.3472222222%;
+    background: url("../img/confucius/line-left-mob.svg") 0 0/cover no-repeat;
+  }
+
+  .decor-line__body::before {
+    width: 26.1111111111%;
+    background: url("../img/confucius/line-right-mob.svg") 0 0/cover no-repeat;
   }
 }
 
@@ -4857,6 +6133,12 @@ button[type=submit] span {
 
   .equally-well__hand-right-image {
     left: 75%;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .confucius-hero__label--bottom {
+    font-size: 1.375rem;
   }
 }
 
@@ -5038,6 +6320,219 @@ button[type=submit] span {
 
   .why-us__image {
     margin-bottom: -16px;
+  }
+
+  .confucius-hero__body {
+    position: relative;
+  }
+
+  .confucius-hero__label {
+    line-height: 135%;
+  }
+
+  .confucius-hero__label--bottom {
+    max-width: 226px;
+    margin-left: auto;
+    margin-top: -47px;
+    padding: 8px;
+  }
+
+  .confucius-hero__label--bottom i::before,
+  .confucius-hero__label--bottom i::after {
+    bottom: 58px;
+  }
+
+  .confucius-hero__image {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    right: 0;
+  }
+
+  .descr-confucius {
+    display: -ms-grid;
+    display: grid;
+    gap: 12px;
+  }
+
+  .descr-confucius__item--01::after {
+    bottom: 0;
+    right: 50px;
+    -webkit-transform: translate(50%, 83%) rotate(90deg);
+        -ms-transform: translate(50%, 83%) rotate(90deg);
+            transform: translate(50%, 83%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 15px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--02 {
+    margin-left: 22.9166666667%;
+  }
+
+  .descr-confucius__item--02::after {
+    bottom: 0;
+    left: 46px;
+    -webkit-transform: translate(50%, 83%) rotate(90deg);
+        -ms-transform: translate(50%, 83%) rotate(90deg);
+            transform: translate(50%, 83%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 15px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--03 {
+    margin-left: 2.7777777778%;
+  }
+
+  .descr-confucius__item--03::after {
+    bottom: 0;
+    left: 64px;
+    -webkit-transform: translate(50%, 83%) rotate(90deg);
+        -ms-transform: translate(50%, 83%) rotate(90deg);
+            transform: translate(50%, 83%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 15px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--04::after {
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translate(50%, 83%) rotate(90deg);
+        -ms-transform: translate(50%, 83%) rotate(90deg);
+            transform: translate(50%, 83%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 15px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--05 {
+    margin-left: 17.0138888889%;
+  }
+
+  .descr-confucius__item--05::after {
+    bottom: 0;
+    left: 63px;
+    -webkit-transform: translate(50%, 83%) rotate(90deg);
+        -ms-transform: translate(50%, 83%) rotate(90deg);
+            transform: translate(50%, 83%) rotate(90deg);
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    width: 15px;
+    height: auto;
+    aspect-ratio: 30/38;
+    background: url("../img/confucius/conf-separator.svg") 0 0/cover no-repeat;
+  }
+
+  .descr-confucius__item--06 {
+    margin-left: 2.7777777778%;
+  }
+
+  .moove-traffic__body {
+    margin-bottom: 28px;
+  }
+
+  .classic-methods__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .classic-methods__item:first-child {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .classic-methods__item:first-child::after {
+    -webkit-transform: translate(50%, 50%) rotate(90deg);
+        -ms-transform: translate(50%, 50%) rotate(90deg);
+            transform: translate(50%, 50%) rotate(90deg);
+    left: 16.6666666667%;
+    bottom: -6px;
+    height: 32px;
+  }
+
+  .classic-methods__item:nth-child(2)::after {
+    -webkit-transform: translate(50%, 0%);
+        -ms-transform: translate(50%, 0%);
+            transform: translate(50%, 0%);
+    right: -6px;
+    top: 32px;
+    height: 32px;
+  }
+
+  .classic-methods__item:nth-child(4) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .classic-methods__item:nth-child(4)::after {
+    -webkit-transform: translate(50%, 50%) rotate(90deg);
+        -ms-transform: translate(50%, 50%) rotate(90deg);
+            transform: translate(50%, 50%) rotate(90deg);
+    left: 22.2222222222%;
+    bottom: -6px;
+    height: 32px;
+  }
+
+  .classic-methods__item:nth-child(5) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .classic-methods__item:nth-child(5)::after {
+    -webkit-transform: translate(50%, 50%) rotate(90deg);
+        -ms-transform: translate(50%, 50%) rotate(90deg);
+            transform: translate(50%, 50%) rotate(90deg);
+    rigth: 22.2222222222%;
+    bottom: -6px;
+    height: 32px;
+  }
+
+  .classic-methods__item:nth-child(6) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .classic-methods__item:nth-child(7)::after {
+    -webkit-transform: translate(50%, -50%);
+        -ms-transform: translate(50%, -50%);
+            transform: translate(50%, -50%);
+    right: -6px;
+    top: 50%;
+    height: 32px;
+  }
+
+  .classic-methods__item:nth-child(8)::after {
+    -webkit-transform: translate(-50%, 50%) rotate(90deg);
+        -ms-transform: translate(-50%, 50%) rotate(90deg);
+            transform: translate(-50%, 50%) rotate(90deg);
+    right: 40px;
+    bottom: -6px;
+    height: 32px;
+  }
+
+  .classic-methods__item:last-child {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 }
 
@@ -5362,6 +6857,81 @@ button[type=submit] span {
 
   .why-us__text--large {
     line-height: 143%;
+  }
+
+  .confucius-hero__label--top {
+    max-width: 126px;
+    padding: 16px 8px;
+    font-size: 22px;
+  }
+
+  .descr-confucius {
+    padding: 12px 8px 63px;
+  }
+
+  .descr-confucius__item {
+    padding: 12px 16px;
+    font-size: 12px;
+    line-height: 133%;
+  }
+
+  .last-thing__body {
+    gap: 8px;
+  }
+
+  .last-thing__item-top {
+    padding: 0 16px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .last-thing__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    padding: 16px 0;
+    line-height: 133%;
+  }
+
+  .last-thing__image {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 36.328125%;
+            flex: 0 0 36.328125%;
+    margin-right: -6.25%;
+  }
+
+  .last-thing__row {
+    gap: 8px;
+  }
+
+  .item-last-thing {
+    padding: 16px;
+  }
+
+  .item-last-thing__label {
+    margin-bottom: 8px;
+  }
+
+  .classic-methods__top {
+    gap: 12px;
+    margin-bottom: 28px;
+  }
+
+  .classic-methods__item {
+    padding: 16px;
+  }
+
+  .classic-methods__item--large-text {
+    line-height: 143%;
+  }
+
+  .its-all__text {
+    line-height: 143%;
+  }
+
+  .decor-line__body {
+    padding: 24px 16px;
   }
 }
 
@@ -6190,6 +7760,60 @@ button[type=submit] span {
     margin-left: -35%;
   }
 
+  .confucius-hero__image {
+    width: 168px;
+  }
+
+  .descr-confucius__item--01 {
+    max-width: 68.8888888889%;
+  }
+
+  .descr-confucius__item--02 {
+    max-width: 68.5185185185%;
+  }
+
+  .descr-confucius__item--03 {
+    max-width: 67.037037037%;
+  }
+
+  .descr-confucius__item--04 {
+    max-width: 94.8148148148%;
+  }
+
+  .descr-confucius__item--05 {
+    max-width: 83.7037037037%;
+  }
+
+  .descr-confucius__item--06 {
+    max-width: 62.2222222222%;
+  }
+
+  .its-all__body {
+    max-width: 288px;
+    height: auto;
+    aspect-ratio: 288/316;
+    margin: 0 auto;
+    padding: 0 0 32px 16px;
+  }
+
+  .its-all__body::after {
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../img/confucius/last-thing-bg-mobile.svg") 0 0/cover no-repeat;
+  }
+
+  .its-all__image {
+    max-width: 150px;
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+  .its-all__content {
+    max-width: 172px;
+    margin-top: -37px;
+  }
+
   .page-404__circle svg {
     -webkit-transform: translate(-45%, -50%);
         -ms-transform: translate(-45%, -50%);
@@ -6504,6 +8128,57 @@ button[type=submit] span {
     opacity: 1;
     visibility: visible;
   }
+
+  .last-thing__text {
+    font-size: 12px;
+  }
+
+  .item-last-thing__text {
+    font-size: 12px;
+  }
+
+  .moove-traffic__body {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+  .moove-traffic__content {
+    display: contents;
+  }
+
+  .moove-traffic__image {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 35.4166666667%;
+  }
+
+  .moove-traffic__info {
+    gap: 8px;
+  }
+
+  .moove-traffic__mini-text {
+    font-size: 12px;
+  }
+
+  .classic-methods__item {
+    font-size: 12px;
+  }
+
+  .classic-methods__item--large-text {
+    font-size: 14px;
+  }
+
+  .its-all__text {
+    font-size: 14px;
+  }
+
+  .decor-line__body span {
+    max-width: 60%;
+  }
 }
 
 @media (max-width: 29.99875em) and (max-width: 20em) {
@@ -6515,6 +8190,20 @@ button[type=submit] span {
 @media (max-width: 21.875em) {
   .install-widget__message {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 20.625em) {
+  .why-us__animation img {
+    left: 50%;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    height: auto;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
   }
 }
 
@@ -6751,6 +8440,138 @@ button[type=submit] span {
     }
 }
 
+@supports (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__confucius-hero {
+      margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__confucius-hero {
+      margin-bottom: calc(4.5rem + 5.5625 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__last-thing {
+      margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__last-thing {
+      margin-bottom: calc(4.5rem + 5.5625 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__moove-traffic {
+      margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__moove-traffic {
+      margin-bottom: calc(4.5rem + 5.5625 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 4.5rem , 3.2769784173rem  +  6.1151079137vw , 8.75rem )) {
+    .page__classic-methods {
+      margin-bottom: clamp( 4.5rem , 3.2769784173rem  +  6.1151079137vw , 8.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 3.2769784173rem  +  6.1151079137vw , 8.75rem )) {
+    .page__classic-methods {
+      margin-bottom: calc(4.5rem + 4.25 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__its-all {
+      margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__its-all {
+      margin-bottom: calc(4.5rem + 5.5625 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__decor-line {
+      margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 4.5rem , 2.8992805755rem  +  8.0035971223vw , 10.0625rem )) {
+    .page__decor-line {
+      margin-bottom: calc(4.5rem + 5.5625 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.75rem , 1.1744604317rem  +  2.8776978417vw , 3.75rem )) {
+    .last-thing__title {
+      margin-bottom: clamp( 1.75rem , 1.1744604317rem  +  2.8776978417vw , 3.75rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.75rem , 1.1744604317rem  +  2.8776978417vw , 3.75rem )) {
+    .last-thing__title {
+      margin-bottom: calc(1.75rem + 2 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem )) {
+    .item-last-thing__label {
+      font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem )) {
+    .item-last-thing__label {
+      font-size: calc(0.875rem + 1.125 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.125rem , 0.0098920863rem  +  5.5755395683vw , 5rem )) {
+    .moove-traffic__title {
+      margin-bottom: clamp( 1.125rem , 0.0098920863rem  +  5.5755395683vw , 5rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.125rem , 0.0098920863rem  +  5.5755395683vw , 5rem )) {
+    .moove-traffic__title {
+      margin-bottom: calc(1.125rem + 3.875 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (margin-bottom: clamp( 1.5rem , 0.7805755396rem  +  3.5971223022vw , 4rem )) {
+    .its-all__text {
+      margin-bottom: clamp( 1.5rem , 0.7805755396rem  +  3.5971223022vw , 4rem );
+    }
+}
+
+@supports not (margin-bottom: clamp( 1.5rem , 0.7805755396rem  +  3.5971223022vw , 4rem )) {
+    .its-all__text {
+      margin-bottom: calc(1.5rem + 2.5 * (100vw - 20rem) / 69.5);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem )) {
+    .decor-line__body span {
+      font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.5512589928rem  +  1.618705036vw , 2rem )) {
+    .decor-line__body span {
+      font-size: calc(0.875rem + 1.125 * (100vw - 20rem) / 69.5);
+    }
+}
+
 @supports (font-size: clamp( 5rem , 3.2913669065rem  +  8.5431654676vw , 10.9375rem )) {
     .page-404__digit {
       font-size: clamp( 5rem , 3.2913669065rem  +  8.5431654676vw , 10.9375rem );
@@ -6893,6 +8714,10 @@ button[type=submit] span {
     max-width: -moz-max-content;
     max-width: max-content;
   }
+
+  .descr-confucius {
+    padding: 34px 16px 48px;
+  }
 }
 
 @media (min-width: 29.99875em) and (max-width: 47.99875em) {
@@ -6904,6 +8729,10 @@ button[type=submit] span {
 
   .equally-well__title {
     margin-top: -100px;
+  }
+
+  .descr-confucius__item {
+    font-size: 16px;
   }
 }
 
@@ -6919,6 +8748,10 @@ button[type=submit] span {
   .description-tabs__slider {
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .confucius-hero__image {
+    width: 300px;
   }
 }
 
@@ -7067,6 +8900,22 @@ button[type=submit] span {
   .why-us__element {
     padding: 24px;
   }
+
+  .last-thing__text {
+    font-size: 22px;
+  }
+
+  .moove-traffic__info {
+    margin: 0 auto;
+  }
+
+  .classic-methods__item--large-text {
+    font-size: 22px;
+  }
+
+  .its-all__text {
+    font-size: 22px;
+  }
 }
 
 @media (min-width: 47.99875em) and (min-width: 20em) and (max-width: 89.5em) {
@@ -7081,11 +8930,27 @@ button[type=submit] span {
       margin-bottom: calc(1.25rem + 2.25 * (100vw - 20rem) / 69.5);
     }
 }
+
+@supports (font-size: clamp( 1.375rem , 0.6196043165rem  +  3.7769784173vw , 4rem )) {
+    .confucius-hero__label--top {
+      font-size: clamp( 1.375rem , 0.6196043165rem  +  3.7769784173vw , 4rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.375rem , 0.6196043165rem  +  3.7769784173vw , 4rem )) {
+    .confucius-hero__label--top {
+      font-size: calc(1.375rem + 2.625 * (100vw - 20rem) / 69.5);
+    }
+}
 }
 
 @media (min-width: 47.99875em) and (max-width: 20em) {
   .crm-hero__title {
     margin-bottom: 1.25rem;
+  }
+
+  .confucius-hero__label--top {
+    font-size: 1.375rem;
   }
 }
 
@@ -7134,6 +8999,26 @@ button[type=submit] span {
 
   .what-mean__slide--04 .col-slide-2::after {
     height: 53px;
+  }
+}
+
+@media (min-width: 62.5em) and (max-width: 86.25em) {
+@supports (font-size: clamp( 1.375rem , -5.5328947368rem  +  11.0526315789vw , 4rem )) {
+    .confucius-hero__label--bottom {
+      font-size: clamp( 1.375rem , -5.5328947368rem  +  11.0526315789vw , 4rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.375rem , -5.5328947368rem  +  11.0526315789vw , 4rem )) {
+    .confucius-hero__label--bottom {
+      font-size: calc(1.375rem + 2.625 * (100vw - 62.5rem) / 23.75);
+    }
+}
+}
+
+@media (min-width: 40.62375em) and (max-width: 74.99875em) {
+  .its-all__inner {
+    gap: 24px;
   }
 }
 
