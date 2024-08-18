@@ -6,7 +6,7 @@
 	<title>Конфуций</title>
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20240818185419" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20240818192446" />
 	<link rel="shortcut icon" href="favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="description" content="Our awesome brand new website" />
@@ -41,8 +41,13 @@
 						</div>
 						<div class="confucius-hero__right">
 							<div class="confucius-hero__image">
-								<img loading="lazy" decoding="async" class="confucius-hero__body-image" src="img/confucius/conf-hero.svg" width="711" height="717" alt="Awesome image" />
+								<picture>
+									<source srcset="img/confucius/conf-hero-mob.svg" media="(max-width: 479px)" />
+									<img class="confucius-hero__body-image" src="img/confucius/conf-hero2.svg" width="711" height="611" alt="Awesome image" />
+								</picture>
+
 								<img loading="lazy" decoding="async" class="confucius-hero__finger" src="img/confucius/conf-hero-finger.svg" width="35" height="105" alt="Awesome image" />
+
 								<img class="confucius-hero__stars confucius-hero__stars--01" decoding="async" data-no-lazy data-prlx-mouse src="img/confucius/conf-stars-1.svg" width="689" height="413" alt="Awesome image" />
 								<img class="confucius-hero__stars confucius-hero__stars--02" decoding="async" data-no-lazy data-prlx-mouse data-prlx-dxr src="img/confucius/conf-stars-2.svg" width="383" height="429" alt="Awesome image" />
 								<img class="confucius-hero__stars confucius-hero__stars--03" decoding="async" data-no-lazy data-prlx-mouse data-prlx-dxy src="img/confucius/conf-stars-3.svg" width="558" height="133" alt="Awesome image" />
@@ -389,7 +394,7 @@
 
 	</div>
 	<!-- prettier-ignore -->
-	<script src="js/app.min.js?_v=20240818185419"></script>
+	<script src="js/app.min.js?_v=20240818192446"></script>
 </body>
 
 </html>

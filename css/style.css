@@ -2197,29 +2197,6 @@ button[type=submit] span {
   position: relative;
 }
 
-.confucius-hero__label--bottom::before,
-.confucius-hero__label--bottom::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: auto;
-  aspect-ratio: 1;
-  -webkit-transform: translate(0, -100%) rotate(180deg);
-      -ms-transform: translate(0, -100%) rotate(180deg);
-          transform: translate(0, -100%) rotate(180deg);
-}
-
-.confucius-hero__label--bottom::before {
-  background-color: var(--black);
-  width: 24px;
-}
-
-.confucius-hero__label--bottom::after {
-  border-radius: var(--border-radius) 0 0 0;
-  width: 36px;
-}
-
 .confucius-hero__label--bottom i {
   position: absolute;
   bottom: 0;
@@ -2299,33 +2276,6 @@ button[type=submit] span {
   -webkit-transform-origin: center bottom;
       -ms-transform-origin: center bottom;
           transform-origin: center bottom;
-}
-
-.confucius-hero__stars {
-  position: absolute;
-  z-index: -1;
-  height: auto;
-}
-
-.confucius-hero__stars--01 {
-  top: 8.1%;
-  left: -4.7%;
-  width: 104.2360060514%;
-  aspect-ratio: 689/413;
-}
-
-.confucius-hero__stars--02 {
-  top: 3.3%;
-  left: 13.4%;
-  width: 57.9425113464%;
-  aspect-ratio: 383/429;
-}
-
-.confucius-hero__stars--03 {
-  top: 25.5%;
-  left: 7.7%;
-  width: 84.4175491679%;
-  aspect-ratio: 558/133;
 }
 
 .descr-confucius__item {
@@ -3218,6 +3168,33 @@ button[type=submit] span {
 
   .why-us__fixed-button {
     display: none;
+  }
+
+  .confucius-hero__stars {
+    position: absolute;
+    z-index: -1;
+    height: auto;
+  }
+
+  .confucius-hero__stars--01 {
+    top: 8.1%;
+    left: -4.7%;
+    width: 104.2360060514%;
+    aspect-ratio: 689/413;
+  }
+
+  .confucius-hero__stars--02 {
+    top: 3.3%;
+    left: 13.4%;
+    width: 57.9425113464%;
+    aspect-ratio: 383/429;
+  }
+
+  .confucius-hero__stars--03 {
+    top: 25.5%;
+    left: 7.7%;
+    width: 84.4175491679%;
+    aspect-ratio: 558/133;
   }
 
   .moove-traffic__body {
@@ -5043,7 +5020,6 @@ button[type=submit] span {
   }
 
   .confucius-hero__label--bottom {
-    margin-top: -96px;
     padding: 20px 37px 0;
   }
 
@@ -5074,7 +5050,6 @@ button[type=submit] span {
     z-index: 5;
     background-color: var(--black-light);
     border-radius: var(--border-radius);
-    max-width: 72.5510204082%;
     margin-left: auto;
     -webkit-box-flex: 1;
         -ms-flex: 1 1 auto;
@@ -5594,7 +5569,7 @@ button[type=submit] span {
   }
 
   .confucius-hero__body-image {
-    border-radius: 0 var(--border-radius) 0 0;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
 
   .descr-confucius {
@@ -5636,12 +5611,6 @@ button[type=submit] span {
     width: auto;
     aspect-ratio: 376/140;
     background: url("../img/confucius/line-right.svg") 0 0/cover no-repeat;
-  }
-}
-
-@media (min-width: 85.9375em) {
-  .confucius-hero__label--bottom::after {
-    background-color: #2a3641;
   }
 }
 
@@ -5955,12 +5924,6 @@ button[type=submit] span {
   }
 }
 
-@media (max-width: 85.9375em) {
-  .confucius-hero__label--bottom::after {
-    background-color: var(--black-light);
-  }
-}
-
 @media (max-width: 81.25em) {
   .install-widget__message {
     top: 20px;
@@ -6111,6 +6074,30 @@ button[type=submit] span {
 
   .slide-what-mean__col:last-child {
     grid-column: 1/-1;
+  }
+
+  .confucius-hero__label--bottom::before,
+  .confucius-hero__label--bottom::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: auto;
+    aspect-ratio: 1;
+    -webkit-transform: translate(0, -100%) rotate(180deg);
+        -ms-transform: translate(0, -100%) rotate(180deg);
+            transform: translate(0, -100%) rotate(180deg);
+  }
+
+  .confucius-hero__label--bottom::before {
+    background-color: var(--black);
+    width: 24px;
+  }
+
+  .confucius-hero__label--bottom::after {
+    background-color: var(--black-light);
+    border-radius: var(--border-radius) 0 0 0;
+    width: 36px;
   }
 }
 
@@ -8130,6 +8117,10 @@ button[type=submit] span {
   .show-btn .why-us__fixed-button {
     opacity: 1;
     visibility: visible;
+  }
+
+  .confucius-hero__stars {
+    display: none;
   }
 
   .last-thing__text {
