@@ -866,22 +866,17 @@ button[type=submit] span {
   top: 0;
   left: 0;
   background-color: rgba(32, 32, 32, 0.4);
-  -webkit-transform: translate3D(0px, 100%, 0);
-      -ms-transform: translate3D(0px, 100%, 0);
-          transform: translate3D(0px, 100%, 0);
+  opacity: 0;
 }
 
 .loaded .item-traffic::after {
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0s linear 0.2s;
-  transition: opacity 0.2s ease, -webkit-transform 0s linear 0.2s;
-  transition: transform 0s linear 0.2s, opacity 0.2s ease;
-  transition: transform 0s linear 0.2s, opacity 0.2s ease, -webkit-transform 0s linear 0.2s;
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0s linear;
+  transition: opacity 0.2s ease, -webkit-transform 0s linear;
+  transition: transform 0s linear, opacity 0.2s ease;
+  transition: transform 0s linear, opacity 0.2s ease, -webkit-transform 0s linear;
 }
 
 .item-traffic--first.animation-step-04::after {
-  -webkit-transform: translate3D(0px, 12.4%, 0);
-      -ms-transform: translate3D(0px, 12.4%, 0);
-          transform: translate3D(0px, 12.4%, 0);
   opacity: 1;
   -webkit-transition: opacity 0.4s ease, -webkit-transform 1s linear;
   transition: opacity 0.4s ease, -webkit-transform 1s linear;
@@ -890,20 +885,17 @@ button[type=submit] span {
 }
 
 .item-traffic--first.animation-step-04 .item-traffic__qr-code {
-  -webkit-transform: translate3D(-50%, 0, 0);
-      -ms-transform: translate3D(-50%, 0, 0);
-          transform: translate3D(-50%, 0, 0);
+  -webkit-transform: translate3D(-50%, 4%, 0);
+      -ms-transform: translate3D(-50%, 4%, 0);
+          transform: translate3D(-50%, 4%, 0);
   opacity: 1;
-  -webkit-transition: opacity 0.4s ease, -webkit-transform 1s linear 0.2s;
-  transition: opacity 0.4s ease, -webkit-transform 1s linear 0.2s;
-  transition: transform 1s linear 0.2s, opacity 0.4s ease;
-  transition: transform 1s linear 0.2s, opacity 0.4s ease, -webkit-transform 1s linear 0.2s;
+  -webkit-transition: opacity 0.4s ease, -webkit-transform 1s linear;
+  transition: opacity 0.4s ease, -webkit-transform 1s linear;
+  transition: transform 1s linear, opacity 0.4s ease;
+  transition: transform 1s linear, opacity 0.4s ease, -webkit-transform 1s linear;
 }
 
 .item-traffic--second.animation-step-03::after {
-  -webkit-transform: translate3D(0px, 12.4%, 0);
-      -ms-transform: translate3D(0px, 12.4%, 0);
-          transform: translate3D(0px, 12.4%, 0);
   opacity: 1;
   -webkit-transition: opacity 0.4s ease, -webkit-transform 1s linear;
   transition: opacity 0.4s ease, -webkit-transform 1s linear;
@@ -912,9 +904,9 @@ button[type=submit] span {
 }
 
 .item-traffic--second.animation-step-03 .item-traffic__qr-code {
-  -webkit-transform: translate3D(-50%, 0, 0);
-      -ms-transform: translate3D(-50%, 0, 0);
-          transform: translate3D(-50%, 0, 0);
+  -webkit-transform: translate3D(-50%, 4%, 0);
+      -ms-transform: translate3D(-50%, 4%, 0);
+          transform: translate3D(-50%, 4%, 0);
   opacity: 1;
   -webkit-transition: opacity 0.4s ease, -webkit-transform 1s linear 0.2s;
   transition: opacity 0.4s ease, -webkit-transform 1s linear 0.2s;
@@ -2560,21 +2552,6 @@ button[type=submit] span {
      object-fit: cover;
 }
 
-.its-all__hand {
-  position: absolute;
-  z-index: 1;
-  top: 19%;
-  right: 16px;
-  width: 34.8571428571%;
-  height: auto;
-  aspect-ratio: 122/55;
-  -webkit-animation: handWaveConf 2s infinite;
-          animation: handWaveConf 2s infinite;
-  -webkit-transform-origin: left center;
-      -ms-transform-origin: left center;
-          transform-origin: left center;
-}
-
 .its-all__content {
   position: relative;
   z-index: 2;
@@ -3219,9 +3196,29 @@ button[type=submit] span {
     margin-left: -7.5757575758%;
   }
 
+  .moove-traffic__image img {
+    border: 0.5px solid #fff;
+    border-radius: 21px;
+  }
+
   .moove-traffic__info {
     gap: 16px;
     max-width: 285px;
+  }
+
+  .its-all__hand {
+    position: absolute;
+    z-index: 1;
+    top: 19%;
+    right: 16px;
+    width: 34.8571428571%;
+    height: auto;
+    aspect-ratio: 122/55;
+    -webkit-animation: handWaveConf 2s infinite;
+            animation: handWaveConf 2s infinite;
+    -webkit-transform-origin: left center;
+        -ms-transform-origin: left center;
+            transform-origin: left center;
   }
 
   .decor-line__body span {
@@ -4309,6 +4306,10 @@ button[type=submit] span {
         -ms-flex: 0 1 65.1445966514%;
             flex: 0 1 65.1445966514%;
     margin-left: -19.7869101979%;
+  }
+
+  .descr-confucius__inner {
+    display: contents;
   }
 
   .its-all__body {
@@ -5935,8 +5936,11 @@ button[type=submit] span {
   }
 
   .decor-line__body::before {
-    width: 26.1111111111%;
-    background: url("../img/confucius/line-right-mob.svg") 0 0/cover no-repeat;
+    width: 25.3472222222%;
+    background: url("../img/confucius/line-left-mob.svg") 0 0/cover no-repeat;
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
   }
 }
 
@@ -7754,28 +7758,37 @@ button[type=submit] span {
     width: 168px;
   }
 
+  .descr-confucius__inner {
+    display: -ms-grid;
+    display: grid;
+    gap: 12px;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+
   .descr-confucius__item--01 {
     max-width: 68.8888888889%;
+    max-width: 186px;
   }
 
   .descr-confucius__item--02 {
-    max-width: 68.5185185185%;
+    max-width: 185px;
   }
 
   .descr-confucius__item--03 {
-    max-width: 67.037037037%;
+    max-width: 181px;
   }
 
   .descr-confucius__item--04 {
-    max-width: 94.8148148148%;
+    max-width: 256px;
   }
 
   .descr-confucius__item--05 {
-    max-width: 83.7037037037%;
+    max-width: 226px;
   }
 
   .descr-confucius__item--06 {
-    max-width: 62.2222222222%;
+    max-width: 168px;
   }
 
   .its-all__body {
@@ -8150,6 +8163,11 @@ button[type=submit] span {
     width: 35.4166666667%;
   }
 
+  .moove-traffic__image img {
+    border: 0.11px solid #fff;
+    border-radius: 5px;
+  }
+
   .moove-traffic__info {
     gap: 8px;
   }
@@ -8164,6 +8182,10 @@ button[type=submit] span {
 
   .classic-methods__item--large-text {
     font-size: 14px;
+  }
+
+  .its-all__hand {
+    display: none;
   }
 
   .its-all__text {
