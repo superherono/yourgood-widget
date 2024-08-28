@@ -3636,6 +3636,7 @@
     }
     let sliderTabs;
     let allSlides;
+    const autoHeightOption = document.querySelector(".wrapper--confusion") ? true : false;
     function bildSliders() {
         let sliders = document.querySelectorAll('[class*="__swiper"]:not(.swiper-wrapper)');
         if (sliders) sliders.forEach((slider => {
@@ -3652,6 +3653,7 @@
             observeParents: true,
             slidesPerView: 1,
             spaceBetween: 80,
+            autoHeight: autoHeightOption,
             speed: 1200,
             autoplay: {
                 delay: 15e3
